@@ -1,3 +1,10 @@
 git remote add origin https://github.com/alcoranpaul/0-to-100-Python-Journey.git
 git branch -M main
 git push -u origin main
+
+To Push Project to GitHub:
+    For new Projects:
+        1. VCS
+        2. Create git repository
+        3. Commit Changes
+        4. Use Command above
