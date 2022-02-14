@@ -1,0 +1,11 @@
+#Data Types
+
+##Strings
+"Hello"
+- An array of chars
+"Hello"[0] = H
+##Integer
+123
+##Float
+3.123124
+##Boolean
