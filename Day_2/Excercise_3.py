@@ -2,7 +2,7 @@
 age = input("What is your current age? ")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+#Wsrite your code below this line 👇
 difference = 90 - int(age)
 months = difference  * 12
 weeks = difference * 52
