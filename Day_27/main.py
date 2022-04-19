@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from Unit7 import *
+from Stats.Unit7 import *
 
 window = Tk()
 window.title("My First HUI")
