@@ -1,13 +1,19 @@
 import math
 
-from Stats.Unit7 import normalDistribution
+from Stats.Unit7 import normalDistribution, findX, findBounds
 
 
 def samplingDistribution(mean, std, size, side: str, *values):
     newStd = std / (math.sqrt(size))
-    solution = normalDistribution(mean, newStd, side, *values)
+    # solution = normalDistribution(mean, newStd, side, *values)
+    # solution = findX(mean, newStd, side, values)
+    # Find bounds for this
+    solution = findBounds(mean, newStd, values[0])
     return solution
 
 
-# sol = samplingDistribution(1.25, 0.05, 100, "below", 1.24, 1.26)
-# print(sol)
+mean1 = 65
+stdd = 5
+size = 264
+sol = samplingDistribution(mean1, stdd, size, "below", 0.95)
+print(sol)

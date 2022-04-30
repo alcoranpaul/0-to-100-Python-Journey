@@ -512,7 +512,6 @@ def normalDistribution(mean, stdDev, side: str, *values):
             solution = round(norm.cdf(high), 4) - round(norm.cdf(low), 4)
         else:
             num = standardize(values[0], mean, stdDev)
-            print(num)
             solution = norm.cdf(num)
     elif side == "above":
         num = standardize(values[0], mean, stdDev)
@@ -601,8 +600,13 @@ def findBounds(mean, std, probability):
     return solution
 
 
-
-
-# distributionSolve()
-# sol = normalDistribution(meeaan, stdd, "below", 75)
+#
+# mean1= 65
+# stdd = 5
+#
+# solution = findX(mean1, stdd, "below", 0.025)
+# print(solution)
+# sol = findX(mean1, stdd, "below", 0.6)
+# # # distributionSolve()
+# # # sol = normalDistribution(meeaan, stdd, "below", 75)
 # print(sol)
