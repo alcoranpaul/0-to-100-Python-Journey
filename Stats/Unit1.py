@@ -56,7 +56,7 @@ def outlierBoxplot(array):
     plt.show()
 
 
-def variance(array):
+def variance(array, printInfo=False):
     mean = getMean(array)
     nDeviations = []
     for i in array:
@@ -65,8 +65,9 @@ def variance(array):
     for u in nDeviations:
         sumSol = sumSol + u
     solution = sumSol / (len(array) - 1)
-    print(f"Average Squared deviation: {solution}")
-    print(f"Sample Deviation: {math.sqrt(solution)}")
+    if printInfo:
+        print(f"Average Squared deviation: {solution}")
+        print(f"Sample Deviation: {math.sqrt(solution)}")
     return solution
 
 
