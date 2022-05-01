@@ -43,6 +43,3 @@ def findMinSampleSize(prob, std, m):
     n = (zStar * std / m) ** 2
     print(f"Minimum sample size (n): {round(n, 2)} approx= {round(n)}")
     return n
-
-
-findMinSampleSize(0.98, 0.1, 0.04)

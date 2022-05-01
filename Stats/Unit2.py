@@ -71,7 +71,7 @@ def getResidual(explanatory, response, xValue):
     return round(y - yHat, 4)
 
 
-if __name__ == '__main__':
-    xc = [5.5, 6.1, 6.7, 7.0, 7.5, 7.9, 8.6, 9.2, 9.8, 10.3]
-    yc = [0.11, 0.19, 0.24, 0.37, 0.36, 0.49, 0.59, 0.60, 0.81, 0.78]
-    print(getResidual(xc, yc, 7.0))
+# if __name__ == '__main__':
+#     xc = [5.5, 6.1, 6.7, 7.0, 7.5, 7.9, 8.6, 9.2, 9.8, 10.3]
+#     yc = [0.11, 0.19, 0.24, 0.37, 0.36, 0.49, 0.59, 0.60, 0.81, 0.78]
+#     print(getResidual(xc, yc, 7.0))

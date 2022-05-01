@@ -10,10 +10,3 @@ def samplingDistribution(mean, std, size, side: str, *values):
     # Find bounds for this
     solution = findBounds(mean, newStd, values[0])
     return solution
-
-
-mean1 = 65
-stdd = 5
-size = 264
-sol = samplingDistribution(mean1, stdd, size, "below", 0.95)
-print(sol)
